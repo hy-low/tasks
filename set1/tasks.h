@@ -1,0 +1,10 @@
+long range_sum(int n);
+long squared_sum(int n);
+int digit_count(int n);
+long array_sum(int *array, int n);
+int is_sorted(int *array, int n);
+int count_distinct(int *array, int n);
+int is_palindrome(char *string);
+int count_words(char *words);
+int max_word_length(char *words);
+int check_anagrams(char *word1, char *word2);
