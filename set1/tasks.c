@@ -1,5 +1,5 @@
 // Calculates the area of the given rectangle
-int calc_area(int width, int height) {
+long calc_area(int width, int height) {
     return -1; // TODO
 }
 
@@ -52,7 +52,7 @@ int manhattan_distance(struct Position p1, struct Position p2) {
 }
 
 // Calculates the sum of two fractions
-struct Fraction sum(struct Fraction f1, struct Fraction f2) {
+struct Fraction fraction_sum(struct Fraction f1, struct Fraction f2) {
     // TODO
 }
 
