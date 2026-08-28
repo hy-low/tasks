@@ -1,208 +1,117 @@
-/*
- * Counts the sum of integers between 1 and n.
- *
- * Parameters:
- *   n: positive integer
- *
- * Return value:
- *   sum of integers from 1 through n
- *
- * Examples:
- *   range_sum(5) -> 15
- *   range_sum(10) -> 55
- */
+// Calculates the area of the given rectangle
+int calc_area(int width, int height) {
+    return -1; // TODO
+}
+
+// Checks if the integer is an odd number
+int is_odd(int n) {
+    return -1; // TODO
+}
+
+// Counts the sum of integer between 1 and n
 long range_sum(int n) {
-    // TODO
-    return -1;
+    return -1; // TODO
 }
 
-/*
- * Counts the sum of squares of integers between 1 and n.
- *
- * Parameters:
- *   n: positive integer
- *
- * Return value:
- *   sum of squares from 1^2 through n^2
- *
- * Examples:
- *   squared_sum(3) -> 14
- *   squared_sum(5) -> 55
- */
+// Counts the sum of squares between 1 and n
 long squared_sum(int n) {
-    // TODO
-    return -1;
+    return -1; // TODO
 }
 
-/*
- * Counts the number of digits in the given integer.
- *
- * Parameters:
- *   n: integer between 1 and 10^9
- *
- * Return value:
- *   number of digits
- *
- * Examples:
- *   digit_count(42) -> 2
- *   digit_count(123) -> 3
- */
+// Divides n apples for two persons
+double divide_apples(int n) {
+    return -1; // TODO
+}
+
+// Calculates the area and perimeter of an rectangle
+void analyze_rectangle(int width, int height, int *area, int *perimeter) {
+    // TODO
+}
+
+// Counts the steps in the following process:
+//   If n is even, divide it by two
+//   If n is odd, subtract one
+//   If n is zero, stop
+int count_steps(int n) {
+    return -1; // TODO
+}
+
+// Returns the week day name in English
+char* week_day_name(int day) {
+    return NULL; // TODO
+}
+
+// Counts the number of digits in the given integer
 int digit_count(int n) {
+    return -1; // TODO
+}
+
+// Calculates the Manhattan distance between two positions
+int manhattan_distance(struct Position p1, struct Position p2) {
+    return -1; // TODO
+}
+
+// Calculates the sum of two fractions
+struct Fraction sum(struct Fraction f1, struct Fraction f2) {
     // TODO
-    return -1;
 }
 
-/*
- * Counts the sum of numbers in the array.
- *
- * Parameters:
- *   array: pointer to an integer array
- *   n: number of elements in the array
- *
- * Return value:
- *   sum of all array elements
- *
- * Examples:
- *   array_sum({1, 2, 3}, 3) -> 6
- *   array_sum({5, 2, 1, 2}, 4) -> 10
- */
-long array_sum(int *array, int n) {
+// Counts the number of even numbers in the array
+int array_even_count(int *array, int n) {
+    return -1; // TODO
+}
+
+// Finds the minimum value in the array
+int array_min_value(int *array, int n) {
+    return -1; // TODO
+}
+
+// Checks if the given array is sorted
+int array_is_sorted(int *array, int n) {
+    return -1; // TODO
+}
+
+// Converts all array values to absolute values
+void convert_array(int *array, int n) {
     // TODO
-    return -1;
 }
 
-/*
- * Checks if the given array is sorted.
- *
- * Parameters:
- *   array: pointer to an integer array
- *   n: number of elements in the array
- *
- * Return value:
- *   1 if the array is sorted, 0 otherwise
- *
- * Examples:
- *   is_sorted({1, 2, 3}, 3) -> 1
- *   is_sorted({3, 2, 1}, 3) -> 0
- */
-int is_sorted(int *array, int n) {
-    // TODO
-    return -1;
+// Counts the number of distinct values in the array
+int array_distinct_count(int *array, int n) {
+    return -1; // TODO
 }
 
-/*
- * Counts the number of distinct values in the array.
- *
- * Parameters:
- *   array: pointer to an integer array
- *   n: number of elements in the array
- *
- * Return value:
- *   number of distinct values
- *
- * Examples:
- *   count_distinct({1, 2, 2, 3}, 4) -> 3
- *   count_distinct({5, 5, 5}, 3)    -> 1
- */
-int count_distinct(int *array, int n) {
-    // TODO
-    return -1;
+// Counts the number of times a letter appears in a string
+int count_letters(char *string, char letter) {
+    return -1; // TODO
 }
 
-/*
- * Checks if the given word is a palindrome.
- *
- * Parameters:
- *   word: string consisting of characters a..z
- *
- * Return value:
- *   1 if the string is a palindrome, 0 otherwise
- *
- * Examples:
- *   is_palindrome("abcba") -> 1
- *   is_palindrome("aybabtu") -> 0
- */
-int is_palindrome(char *word) {
-    int length = 0;
-
-    while (word[length] != '\0') {
-        length++;
-    }
-
-    int left = 0;
-    int right = length - 1;
-
-    while (left < right) {
-        if (word[left] != word[right]) {
-            return 0;
-        }
-
-        left++;
-        right--;
-    }
-
-    return 1;
-}
-
-/*
- * Counts the number of words in the given string.
- *
- * Words are separated by single spaces.
- *
- * Parameters:
- *   words: string consisting of characters a..z and spaces
- *
- * Return value:
- *   number of words in the string
- *
- * Examples:
- *   count_words("apina banaani cembalo") -> 3
- *   count_words("  a  ab abc  ") -> 3
- */
+// Counts the number of words in the given string
 int count_words(char *words) {
-    // TODO
-    return -1;
+    return -1; // TODO
 }
 
-/*
- * Finds the length of the longest word in the given string.
- *
- * The words are separated by single spaces.
- *
- * Parameters:
- *   words: string consisting of characters a..z and spaces
- *
- * Return value:
- *   length of the longest word in the string
- *
- * Examples:
- *   max_word_length("apina banaani cembalo") -> 7
- *   max_word_length("a ab abc") -> 3
- */
+// Finds the maximum word length in the given string
 int max_word_length(char *words) {
-    // TODO
-    return -1;
+    return -1; // TODO
 }
 
-/*
- * Checks if two words are anagrams of each other.
- *
- * The words must contain exactly the same characters
- * the same number of times.
- *
- * Parameters:
- *   word1: string consisting of characters a..z
- *   word2: string consisting of characters a..z
- *
- * Return value:
- *   1 if the words are anagrams, 0 otherwise
- *
- * Examples:
- *   check_anagrams("abab", "baba") -> 1
- *   check_anagrams("abab", "abca") -> 0
- *   check_anagrams("a", "aybabtu") -> 0
- */
+// Checks if the given word is a palindrome
+int is_palindrome(char *word) {
+    return -1; // TODO
+}
+
+// Counts the number of times any letter appears in a string
+int count_letters_set(char *string, char *letters) {
+    return -1; // TODO
+}
+
+// Checks if two words are anagrams of each other
 int check_anagrams(char *word1, char *word2) {
-    // TODO
-    return -1;
+    return -1; // TODO
+}
+
+// Checks a University of Helsinki student number
+int valid_student_number(char *number) {
+    return -1; // TODO
 }
