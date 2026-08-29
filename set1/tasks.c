@@ -1,30 +1,30 @@
 // Calculates the area of the given rectangle
 long calc_area(int width, int height) {
-    return -1; // TODO
+    // TODO
 }
 
 // Checks if the integer is an odd number
 int is_odd(int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Counts the sum of integer between 1 and n
 long range_sum(int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Counts the sum of squares between 1 and n
 long squared_sum(int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Divides n apples for two persons
 double divide_apples(int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Calculates the area and perimeter of an rectangle
-void analyze_rectangle(int width, int height, int *area, int *perimeter) {
+void analyze_rectangle(int width, int height, long *area, long *perimeter) {
     // TODO
 }
 
@@ -33,22 +33,22 @@ void analyze_rectangle(int width, int height, int *area, int *perimeter) {
 //   If n is odd, subtract one
 //   If n is zero, stop
 int count_steps(int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Returns the week day name in English
 char* week_day_name(int day) {
-    return NULL; // TODO
+    // TODO
 }
 
 // Counts the number of digits in the given integer
 int digit_count(int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Calculates the Manhattan distance between two positions
 int manhattan_distance(struct Position p1, struct Position p2) {
-    return -1; // TODO
+    // TODO
 }
 
 // Calculates the sum of two fractions
@@ -58,17 +58,17 @@ struct Fraction fraction_sum(struct Fraction f1, struct Fraction f2) {
 
 // Counts the number of even numbers in the array
 int array_even_count(int *array, int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Finds the minimum value in the array
 int array_min_value(int *array, int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Checks if the given array is sorted
 int array_is_sorted(int *array, int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Converts all array values to absolute values
@@ -78,40 +78,40 @@ void convert_array(int *array, int n) {
 
 // Counts the number of distinct values in the array
 int array_distinct_count(int *array, int n) {
-    return -1; // TODO
+    // TODO
 }
 
 // Counts the number of times a letter appears in a string
 int count_letters(char *string, char letter) {
-    return -1; // TODO
+    // TODO
 }
 
 // Counts the number of words in the given string
 int count_words(char *words) {
-    return -1; // TODO
+    // TODO
 }
 
 // Finds the maximum word length in the given string
 int max_word_length(char *words) {
-    return -1; // TODO
+    // TODO
 }
 
 // Checks if the given word is a palindrome
 int is_palindrome(char *word) {
-    return -1; // TODO
+    // TODO
 }
 
 // Counts the number of times any letter appears in a string
 int count_letters_set(char *string, char *letters) {
-    return -1; // TODO
+    // TODO
 }
 
 // Checks if two words are anagrams of each other
 int check_anagrams(char *word1, char *word2) {
-    return -1; // TODO
+    // TODO
 }
 
 // Checks a University of Helsinki student number
 int valid_student_number(char *number) {
-    return -1; // TODO
+    // TODO
 }
