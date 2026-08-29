@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "local.h"
 #include "tasks.h"
 
 void test_value_impl(char *call, long result, long expected) {
@@ -115,6 +116,14 @@ void test_convert_array(int *array, int n, char *context) {
 #define test_array(call, expected, context) test_array_impl(#call, call, expected, context)
 
 int main(void) {
+    printf("Local tests:\n");
+    printf("****************************************\n");
+
+    local_tests();
+
+    printf("\n\nServer tests:\n");
+    printf("****************************************\n");
+
     test_value(calc_area(1, 1), 1);
     test_value(calc_area(3, 4), 12);
     test_value(calc_area(42, 1337), 56154);
