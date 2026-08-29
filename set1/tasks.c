@@ -1,3 +1,5 @@
+#include "tasks.h"
+
 // Calculates the area of the given rectangle
 long calc_area(int width, int height) {
     // TODO

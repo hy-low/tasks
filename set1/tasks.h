@@ -1,3 +1,11 @@
+struct Position {
+    int x, y;
+};
+
+struct Fraction {
+    int a, b;
+};
+
 long calc_area(int width, int height);
 int is_odd(int n);
 long range_sum(int n);
