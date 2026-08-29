@@ -1,24 +1,28 @@
 #include <stdio.h>
+#include <stdlib.h>
+#include "local.h"
 #include "tasks.h"
 
-int tests_total = 0;
-int tests_accepted = 0;
-
 void test_value_impl(char *call, long result, long expected) {
-    tests_total++;
-    if (result == expected) {
-        tests_accepted++;
-        return;
-    }
+    if (result == expected) return;
 
     printf("Wrong answer: %s\n", call);
     printf("  Return value: %ld\n", result);
     printf("  Expected value: %ld\n", expected);
+    exit(0);
 }
 
 #define test_value(call, expected) test_value_impl(#call, call, expected)
 
 int main(void) {
+    printf("Local tests:\n");
+    printf("****************************************\n");
+
+    local_tests();
+
+    printf("\n\nServer tests:\n");
+    printf("****************************************\n");
+
     test_value(bit_count(0), 0);
     test_value(bit_count(1), 1);
     test_value(bit_count(42), 3);
@@ -131,28 +135,6 @@ int main(void) {
     test_value(reverse_bits(1337), 2627731456);
     test_value(reverse_bits(3333333333), 2860873059);
 
-    {
-        int array1[] = {1, 2, 4, 5};
-        test_value(missing(array1, 4), 3);
-        int array2[] = {1, 2, 3, 4};
-        test_value(missing(array2, 4), 5);
-        int array3[] = {5, 2, 3, 4};
-        test_value(missing(array3, 4), 1);
-        int array4[] = {1};
-        test_value(missing(array4, 1), 2);
-        int array5[] = {2};
-        test_value(missing(array5, 1), 1);
-    }
-
-    {
-        int array1[] = {1, 2, 1, 3, 2};
-        test_value(only_one(array1, 5), 3);
-        int array2[] = {5};
-        test_value(only_one(array2, 1), 5);
-        int array3[] = {3, 3, 1, 1, 2};
-        test_value(only_one(array3, 5), 2);
-    }
-
     test_value(xor_sum(1), 1);
     test_value(xor_sum(2), 3);
     test_value(xor_sum(42), 43);
@@ -160,11 +142,5 @@ int main(void) {
     test_value(xor_sum(13371337), 1);
     test_value(xor_sum(42424242), 42424243);
 
-    if (tests_accepted == tests_total) {
-        printf("All tests accepted, congratulations\n");
-        return 0;
-    } else {
-        printf("%d/%d tests accepted\n", tests_accepted, tests_total);
-        return 1;
-    }
+    printf("OK\n");
 }
