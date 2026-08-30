@@ -1,5 +1,5 @@
 CC = gcc
-CFLAGS = -Wall -Wextra -O2 -fsanitize=address
+CFLAGS = -Wall -Wextra -O2 -fsanitize=address -g
 
 TARGET = main
 OBJS = local.o main.o tasks.o
