@@ -1,3 +1,5 @@
+#include "tasks.h"
+
 // Counts the number of times pattern occurs in string
 // Example: count("aybabtu", "bab") -> 1
 // Example: count("aaaaaa", "aa") -> 5
