@@ -1,0 +1,15 @@
+int count(char *string, char *pattern);
+int starts_with(char *string, char *prefix);
+int ends_with(char *string, char *suffix);
+char* concat(char **array, int n);
+int find(char *string, char *pattern);
+char* repeat(char *pattern, int n);
+char* trim(char *string);
+char* upper(char *string);
+char* lower(char *string);
+char* substr(char *string, int start, int length);
+char* replace(char *string, char *old, char *new);
+char* rot13(char *string);
+int split(char* string, char delimiter, char*** array);
+char* join(char **array, int n, char delimiter);
+void sort_strings(char **array, int n);
