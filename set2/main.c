@@ -142,5 +142,5 @@ int main(void) {
     test_value(xor_sum(13371337), 1);
     test_value(xor_sum(42424242), 42424243);
 
-    printf("OK\n");
+    printf("Set 2 OK\n");
 }

@@ -300,5 +300,5 @@ int main(void) {
     test_value(valid_student_number("0127491390"), 0);
     test_value(valid_student_number("100000007"), 0);
 
-    printf("OK\n");
+    printf("Set 1 OK\n");
 }

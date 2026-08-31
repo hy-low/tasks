@@ -248,5 +248,5 @@ int main(void) {
         test_sort_strings(array, 5, sorted);
     }
 
-    printf("OK\n");
+    printf("Set 3 OK\n");
 }
