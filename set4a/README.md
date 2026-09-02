@@ -105,7 +105,7 @@ void local_tests(void) {
 }
 ```
 
-Expected Output
+Expected output:
 
 ```
 Initial size: 0
