@@ -96,6 +96,19 @@ void test3(void) {
     tree_free(tree);
 }
 
+// Duplicate values test
+void test4() {
+    Tree *tree = tree_create();
+
+    int n = 1000000;
+    for (int i = 1; i <= n; i++) {
+        tree_insert(tree, 1337);
+        assert(tree_size(tree) == 1);
+    }
+
+    tree_free(tree);
+}
+
 int main(void) {
     printf("Local tests:\n");
     printf("****************************************\n");
@@ -108,6 +121,7 @@ int main(void) {
     test1();
     test2();
     test3();
+    test4();
 
     printf("Set 4c OK\n");
 }
