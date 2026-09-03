@@ -122,8 +122,8 @@ unsigned int flip_all_bits(unsigned int x) {
 
 // Swaps every pair of adjacent bits
 // Example: swap_adjacent_bits(1337) -> 2614
-//   1337 = 10100111001
-//   2614 = 10011100101
+//   1337 = 010100111001
+//   2614 = 101000110110
 unsigned int swap_adjacent_bits(unsigned int x) {
     // TODO
 }
