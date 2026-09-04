@@ -1,8 +1,8 @@
-#include "local.h"
-#include "tasks.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "local.h"
+#include "tasks.h"
 
 #define GRAY "\033[90m"
 #define RED "\033[31m"
