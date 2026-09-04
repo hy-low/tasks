@@ -185,6 +185,7 @@ int main(void) {
     test_string(trim(" aybabtu   "), "aybabtu");
     test_string(trim("aybabtu"), "aybabtu");
     test_string(trim("    aybabtu    "), "aybabtu");
+    test_string(trim("    ayb abtu    "), "ayb abtu");
     test_string(trim("   "), "");
 
     test_string(upper("aybabtu"), "AYBABTU");
