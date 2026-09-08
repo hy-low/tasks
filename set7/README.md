@@ -6,7 +6,7 @@ Your emulator should be able to process 6502 machine language instructions. Note
 
 Your emulator will be tested using `nestest`, which can be found through the [emulator tests](https://www.nesdev.org/wiki/Emulator_tests) on the NESdev Wiki. There are two files: `nestest.nes` contains the test code for the emulator, and `nestest.log` contains a log that shows the processor status before each instruction. You should add these two files to your `set7` directory.
 
-The file `nestest.nes` also tests unoffical instructions. However, in this exercise, it is enough that your emulator supports the [official instructions](https://www.nesdev.org/wiki/Instruction_reference).
+The file `nestest.nes` also tests unofficial instructions. However, in this exercise, it is enough that your emulator supports the [official instructions](https://www.nesdev.org/wiki/Instruction_reference).
 
 ## Files
 
