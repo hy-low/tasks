@@ -15,7 +15,7 @@ local.o: local.c local.h zip.h
 main.o: main.c local.h zip.h
 	$(CC) $(CFLAGS) -c main.c
 
-stack.o: zip.c zip.h
+zip.o: zip.c zip.h
 	$(CC) $(CFLAGS) -c zip.c
 
 clean:

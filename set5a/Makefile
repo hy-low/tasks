@@ -15,7 +15,7 @@ local.o: local.c local.h csv.h
 main.o: main.c local.h csv.h
 	$(CC) $(CFLAGS) -c main.c
 
-stack.o: csv.c csv.h
+csv.o: csv.c csv.h
 	$(CC) $(CFLAGS) -c csv.c
 
 clean:

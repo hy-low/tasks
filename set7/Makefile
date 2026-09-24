@@ -15,7 +15,7 @@ local.o: local.c local.h cpu.h
 main.o: main.c local.h cpu.h
 	$(CC) $(CFLAGS) -c main.c
 
-stack.o: cpu.c cpu.h
+cpu.o: cpu.c cpu.h
 	$(CC) $(CFLAGS) -c cpu.c
 
 clean:

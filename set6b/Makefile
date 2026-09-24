@@ -15,7 +15,7 @@ local.o: local.c local.h factorial.h
 main.o: main.c local.h factorial.h
 	$(CC) $(CFLAGS) -c main.c
 
-stack.o: factorial.c factorial.h
+factorial.o: factorial.c factorial.h
 	$(CC) $(CFLAGS) -c factorial.c
 
 clean:
