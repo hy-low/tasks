@@ -6,7 +6,10 @@ This task deals with handling big integers in C. More specifically, your task is
 char* factorial(int n);
 ```
 
-that calculates the factorial of a given integer `n` and returns it as a string. For example, the output of the code
+that calculates the factorial of a given integer `n` and returns it as a string.
+**Note: you may only use the C standard library in your own implementation, do not use GMP.**
+
+For example, the output of the code
 
 ```c
 int n = 100;
@@ -29,4 +32,13 @@ This is an experimental task where you should compare three methods for calculat
 - A C implementation using the GMP library (see Chapter 7 in the course material)
 - A Python implementation using built-in Python big integers
 
-For each implementation, find out the maximum value of `n` that you can process within one minute.
+Suggested approach:
+- Implement a factorial_gmp.c which conforms to the factorial.h header.
+- Implement a factorial_main.c which takes `n` as a command line argument and calls `factorial` (see Chapter 1).
+- Edit the Makefile to compile factorial_main.c and factorial_gmp.c (Chapter 7)
+- Edit the Makefile to link two programs: factorial and factorial_gmp, using the two different factorial*.o files, respectively.
+- Finally, implement a factorial.py.
+
+For each implementation, try to estimate the maximum value of `n` that you can process within one minute.
+**Measuring the program execution times and adjusting `n` via manual trial and error is sufficient**,
+but more sophisticated approximations, such as [log-log](https://en.wikipedia.org/wiki/Power_law) linear regression, may be utilized.
